@@ -64,6 +64,24 @@ a{
 .user-social a{
 	color: white;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 footer{
 	position: absolute;
 	bottom: 0px;

@@ -26,11 +26,24 @@
 				<div class="user-name">Austin Brown</div>
 				<hr style="width:300px; margin-top:10px; margin-bottom: 10px; border-top: 1px solid #EA4040;">
 				<div class="user-social">
-					<a href="https://github.com/ascottb" target="_blank"><i class="fa fa-github"></i></a>
+					<!--<div class="tooltip"> 
+						<span class="tooltiptext"> Test
+							<span class="tooltiptext">Tooltip text</span>
+						</span>
+					</div>-->
+					<span title="Github">
+						<a href="https://github.com/ascottb" target="_blank"><i class="fa fa-github"></i></a>
+					</span>
 					<!--<a href="https://www.facebook.com/austin.brown.5836" target="_blank"><i class="fa fa-facebook"></i></a>-->
-					<a href="mailto:asbrownpro@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-					<a href="https://www.linkedin.com/in/austin-brown-00315512a" target="_blank"><i class="fa fa-linkedin"></i></a>
-					<a href="ResumeAustinBrown.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+					<span title="asbrownpro@gmail.com">
+						<a href="mailto:asbrownpro@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+					</span>
+					<span title="LinkedIn">
+						<a href="https://www.linkedin.com/in/austin-brown-00315512a" target="_blank"><i class="fa fa-linkedin"></i></a>
+					</span>
+					<span title="Resume">
+						<a href="ResumeAustinBrown.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+					</span>
 				</div>
 			</div>
 			<div class="right-pane col-md-6 col-xs-12">
@@ -39,8 +52,17 @@
 		</div>
 	</div>
 </div>
+
 <footer>
-<a target="_blank">Made in beautiful Oregon</a>
+	<!--<div id = "#about" class="portfolio spacer" style="background-color:rgb(200,200,200);">
+         <div class="container">
+            <h2 class="left">About Me</h2>
+            <p class="center-text">
+               Hello!
+            </p>
+         </div>
+      </div>-->
+	<a target="_blank">Made in beautiful Oregon</a>
 </footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
@@ -52,7 +74,7 @@
 				$(".right-pane").css("height",$(".left-pane").css("height"));
 				$(".user-info").typed({
 	            strings: ["<p>Systems Engineer.</p> ^1000 <p>Mobile Developer.</p> ^1000 <p>Programmer.</p>"],
-	            typeSpeed: 8,
+	            typeSpeed: 1,
 	            loop: false,
 	            content:'html',
 	            showCursor:false

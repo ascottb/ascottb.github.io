@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Portfolio of Austin Brown. He is a software developer with a passion for user experiences.">
+	<meta name="keywords" content="Austin Brown, Austin, Brown">
+	<meta property="og:title" content="Austin Brown"/>
+	<meta property="og:url" content="https://ascottb.github.io"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:site_name" content="Austin Brown"/>
+	<meta property="og:description" content="Portfolio of Austin Brown. He is a software developer with a passion for user experiences."/>
+	<!--<meta property="og:image" content="https://pecey.github.io/images/user.png"/>-->
+
+	<title>Austin Brown</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+<div id="landing-slide" class="slide">
+	<div id="landing-overlay" class="slide">
+		<div id="landing-slide-content" class="container row">
+			<div class="left-pane col-md-12 col-xs-12" style="opacity: 0">
+				<div class="user-image"><img src="images/profilepic.jpg"></div>
+				<div class="user-name">Austin Brown</div>
+				<hr style="width:300px; margin-top:10px; margin-bottom: 10px; border-top: 1px solid #EA4040;">
+				<div class="user-social">
+					<!--<div class="tooltip"> 
+						<span class="tooltiptext"> Test
+							<span class="tooltiptext">Tooltip text</span>
+						</span>
+					</div>-->
+					<span title="Github">
+						<a href="https://github.com/ascottb" target="_blank"><i class="fa fa-github"></i></a>
+  					</span>
+					<!--<a href="https://www.facebook.com/austin.brown.5836" target="_blank"><i class="fa fa-facebook"></i></a>-->
+					<span title="asbrownpro@gmail.com">
+						<a href="mailto:asbrownpro@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+					</span>
+					<span title="LinkedIn">
+						<a href="https://www.linkedin.com/in/austin-brown-00315512a" target="_blank"><i class="fa fa-linkedin"></i></a>
+					</span>
+					<span title="Resume">
+						<a href="AustinBrownResumeFeb.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+					</span>
+				</div>
+			</div>
+			<div class="right-pane col-md-6 col-xs-12">
+				<span class="user-info"></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<!--<div id = "#about" class="portfolio spacer" style="background-color:rgb(200,200,200);">
+         <div class="container">
+            <h2 class="left">About Me</h2>
+            <p class="center-text">
+               Hello!
+            </p>
+         </div>
+      </div>-->
+	<a target="_blank">Made in beautiful Oregon</a>
+</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/typed.js"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+			$(".left-pane").fadeTo(2000,1).animate({
+				width:"50%",
+			}, 1000).addClass("col-md-6").removeClass("col-md-12").css("width","100%").animate({"border-right-width":"1"},500,function(){
+				$(".right-pane").css("height",$(".left-pane").css("height"));
+				$(".user-info").typed({
+	            strings: ["<p>Full Stack Engineer.</p> ^500 <p>Mobile Developer.</p> ^500 <p>Frontend Expert.</p>"],
+	            typeSpeed: 0.5,
+	            loop: false,
+	            content:'html',
+	            showCursor:false
+	        });
+			});
+		});
+	</script>
+<!--<script>
+
+"<p>Systems Engineer.</p> ^1000 <p>Mobile Developer.</p> ^1000 <p>Programmer.</p>"
+"<p>Hello, this is the personal website for Austin Brown, graduate of Oregon State University in Computer Science. He has worked at Intel Corporation, Air-Weigh, and hopefully your company next! </p>"
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74430110-1', 'auto');
+  ga('send', 'pageview');
+
+</script>-->
+</body>
+</html>
